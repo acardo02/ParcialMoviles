@@ -1,0 +1,35 @@
+[33mcommit 1df133820f8d0caf8a63c7ad09acc3f9fc3cd752[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: acardo02 <00037820@uca.edu.sv>
+Date:   Tue May 23 10:51:31 2023 -0600
+
+    feat: recycler view adapter layer
+
+[33mcommit 53f53866cd940eea1b69216eb7755406f57f6ebe[m
+Author: acardo02 <00037820@uca.edu.sv>
+Date:   Tue May 23 10:17:48 2023 -0600
+
+    feat: add views layer
+
+[33mcommit 79e8b25aa38747352fcbb4f30f8909aaf0e1ba2d[m
+Author: acardo02 <00037820@uca.edu.sv>
+Date:   Tue May 23 09:35:40 2023 -0600
+
+    feat: viewmodel layer
+
+[33mcommit 16fda0606c3ed0b60695557bd56151d9d164d3af[m
+Author: acardo02 <00037820@uca.edu.sv>
+Date:   Tue May 23 09:20:23 2023 -0600
+
+    feat: repository layer
+
+[33mcommit f5792b678a9d43a988bf2c5cf09424e9a394dd1e[m
+Author: acardo02 <00037820@uca.edu.sv>
+Date:   Tue May 23 09:15:03 2023 -0600
+
+    feat: model layer
+
+[33mcommit 767197ce0f4a18e678e80a89fc632f24d12205de[m
+Author: acardo02 <00037820@uca.edu.sv>
+Date:   Tue May 23 09:09:57 2023 -0600
+
+    feat:initial commit
