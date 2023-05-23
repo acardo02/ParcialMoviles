@@ -34,6 +34,8 @@
                android:layout_marginStart="@dimen/small_gap"
                android:layout_marginTop="@dimen/big_gap"
                android:layout_marginEnd="@dimen/small_gap"
+               tools:itemCount="4"
+               tools:listitem="@layout/plant_item"
                app:layout_constraintEnd_toEndOf="parent"
                app:layout_constraintStart_toStartOf="parent"
                app:layout_constraintTop_toBottomOf="@+id/textView">
