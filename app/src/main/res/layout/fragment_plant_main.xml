@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.plant.plantmain.PlantMainFragment">
+
+   <FrameLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@color/black">
+
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <TextView
+               android:id="@+id/textView"
+               style="@style/TextAppearance.AppCompat.Title"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="@dimen/big_gap"
+               android:text="@string/plants_text"
+               android:textAllCaps="true"
+               android:textColor="@color/white"
+               android:textSize="32sp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent" />
+
+           <androidx.recyclerview.widget.RecyclerView
+               android:id="@+id/plants_recycler_view"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginStart="@dimen/small_gap"
+               android:layout_marginTop="@dimen/big_gap"
+               android:layout_marginEnd="@dimen/small_gap"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/textView">
+
+           </androidx.recyclerview.widget.RecyclerView>
+
+           <com.google.android.material.floatingactionbutton.FloatingActionButton
+               android:id="@+id/floatingActionButton"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginEnd="@dimen/big_gap"
+               android:layout_marginBottom="@dimen/big_gap"
+               android:clickable="true"
+               android:contentDescription="@string/floating_add_button_content_description"
+               android:backgroundTint="@color/white"
+               android:src="@drawable/baseline_add_24"
+               app:layout_constraintBottom_toBottomOf="parent"
+               app:layout_constraintEnd_toEndOf="parent" />
+
+       </androidx.constraintlayout.widget.ConstraintLayout>
+   </FrameLayout>
+</layout>

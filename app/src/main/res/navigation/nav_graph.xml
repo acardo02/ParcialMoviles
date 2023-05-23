@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/plantMainFragment">
+
+    <fragment
+        android:id="@+id/plantMainFragment"
+        android:name="com.acardona.plantatracker.ui.plant.plantmain.PlantMainFragment"
+        android:label="fragment_plant_main"
+        tools:layout="@layout/fragment_plant_main" >
+        <action
+            android:id="@+id/action_plantMainFragment_to_infoPlantFragment"
+            app:destination="@id/infoPlantFragment" />
+        <action
+            android:id="@+id/action_plantMainFragment_to_newPlantFragment"
+            app:destination="@id/newPlantFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/infoPlantFragment"
+        android:name="com.acardona.plantatracker.ui.plant.infoplant.InfoPlantFragment"
+        android:label="fragment_info_plant"
+        tools:layout="@layout/fragment_info_plant" />
+    <fragment
+        android:id="@+id/newPlantFragment"
+        android:name="com.acardona.plantatracker.ui.plant.newplant.NewPlantFragment"
+        android:label="fragment_new_plant"
+        tools:layout="@layout/fragment_new_plant" />
+</navigation>

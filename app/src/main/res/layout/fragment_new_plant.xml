@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.plant.newplant.NewPlantFragment">
+
+    <data>
+        <variable
+            name="viewmodel"
+            type="com.acardona.plantatracker.ui.viewmodel.PlantViewModel" />
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                style="@style/TextAppearance.AppCompat.Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/big_gap"
+                android:text="@string/add_plants"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="32sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/specie_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_gap"
+                android:layout_marginTop="@dimen/big_gap"
+                android:layout_marginEnd="@dimen/medium_gap"
+                android:background="@color/white"
+                android:hint="@string/specie_hint"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:text="@={viewmodel.specie}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+            <EditText
+                android:id="@+id/plant_color_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/medium_gap"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:layout_marginEnd="@dimen/medium_gap"
+                android:background="@color/white"
+                android:hint="@string/plant_color_hint"
+                android:minHeight="48dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:text="@={viewmodel.plantColor}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/specie_edit_text" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_gap"
+                android:layout_marginEnd="@dimen/big_gap"
+                android:text="@string/add_text_button"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/black"
+                android:onClick="@{() -> viewmodel.createPlant()}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/plant_color_edit_text" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </FrameLayout>
+
+</layout>

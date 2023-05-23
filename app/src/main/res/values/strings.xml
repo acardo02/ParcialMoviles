@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Planta Tracker</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="plants_text">Plantas</string>
+    <string name="floating_add_button_content_description">floating add button</string>
+    <string name="add_plants">Añadir Plantas</string>
+    <string name="specie_hint">especie</string>
+    <string name="plant_color_hint">color de planta</string>
+    <string name="add_text_button">Añadir</string>
+    <string name="info_text">Informacion</string>
 </resources>
